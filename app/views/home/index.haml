@@ -3,3 +3,26 @@
   .col-md-12
     .jumbotron
       %h1 Mоделювання Монте Карло
+    .col-md-4
+      %h4
+        Введіть дані:
+      .form
+        .input-group
+          %label
+            Значення 1
+          %input.form-control#param1{:placeholder => "Параметр 1", :type => "number"}
+        %hr
+        .input-group
+          %label
+            Значення 2
+          %input.form-control#param2{:placeholder => "Параметр 2", :type => "number"}
+        %hr
+        .input-group
+          %label
+            Значення 3
+          %input.form-control#param3{:placeholder => "Параметр 3", :type => "number"}
+        %br
+        %button.btn.btn-primary#calc{:type => "button"}
+          Розрахувати
+    .col-md-8
+      #line-chart
