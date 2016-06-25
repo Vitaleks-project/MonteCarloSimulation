@@ -1,8 +1,10 @@
-
 .row
   .col-md-12
     .jumbotron
       %h1 Mоделювання Монте Карло
+      .btn-group
+        = link_to "Лінійний графік", root_path, data: { no_turbolink: true }, class: "btn btn-default"
+        = link_to "3D графік", example_path, data: { no_turbolink: true }, class: "btn btn-default"
     .col-md-4
       %h4
         Введіть дані:
@@ -25,4 +27,6 @@
         %button.btn.btn-primary#calc{:type => "button"}
           Розрахувати
     .col-md-8
+      %h4
+        Лінійний графік
       #line-chart

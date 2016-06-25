@@ -5,5 +5,7 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    %script{:src => "http://x3dom.org/x3dom/dist/x3dom-full.js", :type => "text/javascript"}
+    %link{:href => "http://www.x3dom.org/download/dev/x3dom.css", :rel => "stylesheet", :type => "text/css"}
   %body
     = yield
